@@ -5,20 +5,22 @@
 // va applicato uno sconto del 40% per gli over 65.
 // L'output del prezzo finale va messo fuori in forma umana (con massimo due decimali, per indicare centesimi sul prezzo). Questo richiederà un minimo di ricerca.
 
-const km = prompt (Number("Quanti km devi percorrere?"));
+const km = prompt ("Quanti km devi percorrere?");
 
-const età = prompt (Number("Quanti anni hai?"));
+const età = prompt ("Quanti anni hai?");
 
-const pkm = 0,21;
+const pkm = 0.21;
 
 let prezzo = pkm * km;
 
+console.log(prezzo)
+
 if (età < 18 ) {
-    prezzo = ((pkm * km) * 0,8);
-}
+    prezzo = ((pkm * km) * 0.8);
+} 
 
-else ( età >= 65 ) {
-    prezzo = ((pkm * km) * 0,6);
-}
+else ( età >= 65 ) 
+    prezzo = ((pkm * km) * 0.6);
 
-.window.alert(prezzo);
+
+window.alert(prezzo.toFixed(2));
