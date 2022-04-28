@@ -19,8 +19,8 @@ if (età < 18 ) {
     prezzo = ((pkm * km) * 0.8);
 } 
 
-else ( età >= 65 ) 
+else if ( età >= 65 ) {
     prezzo = ((pkm * km) * 0.6);
 
-
+}
 window.alert(prezzo.toFixed(2));
